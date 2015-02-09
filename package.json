@@ -1,0 +1,23 @@
+{
+  "name": "mediasilo-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdelano/mediasilo-node-sdk"
+  },
+  "keywords": [
+    "mediasilo",
+    "sdk"
+  ],
+  "author": "Mike Delano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdelano/mediasilo-node-sdk/issues"
+  },
+  "homepage": "https://github.com/mdelano/mediasilo-node-sdk"
+}
