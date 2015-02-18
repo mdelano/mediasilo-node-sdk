@@ -1,8 +1,5 @@
-var mediasilo = require('./api');
-var MediaSiloAPI = new mediasilo({username:"simon", password:"simon", hostname:"simon"});
+'use strict'
 
-MediaSiloAPI.Project.read().then(function(assets) {
-  console.log("ASSET:", assets);
-}).fail(function(err) {
-  console.log("Error:", err);
-});
+var api = require('./api');
+
+module.exports = api;
