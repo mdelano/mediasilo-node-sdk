@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/mdelano/mediasilo-node-sdk/issues"
   },
-  "homepage": "https://github.com/mdelano/mediasilo-node-sdk"
+  "homepage": "https://github.com/mdelano/mediasilo-node-sdk",
+  "dependencies": {
+    "q": "^1.1.2",
+    "request": "^2.53.0"
+  }
 }
