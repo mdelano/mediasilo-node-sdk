@@ -2,7 +2,7 @@
 
 var request   = require('request');
 var Q         = require('q');
-request.debug = true;
+
 module.exports = client;
 
 function client(credentials) {
