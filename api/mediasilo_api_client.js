@@ -107,6 +107,10 @@ var getRequest = function(resource_path, credentials) {
     }
   };
 
+  if(credentials.privilegedAuth) {
+    opts.headers.MediaSiloPrivilegedAuth = true;
+  }
+
   return opts;
 }
 
