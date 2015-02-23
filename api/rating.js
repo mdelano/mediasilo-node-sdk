@@ -17,7 +17,6 @@ Rating.prototype.create = function(assetId, rating) {
 }
 
 Rating.prototype.read = function(assetId, query) {
-  console.log("HIIIII");
   return this.apiClient.get(requestHelper.getRelativePath(util.format(resourcePath, assetId), null, query));
 }
 
