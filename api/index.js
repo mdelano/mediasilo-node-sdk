@@ -8,6 +8,7 @@ var Rating                = require('./rating');
 var Project               = require('./project');
 var Folder                = require('./folder');
 var Comment               = require('./comment');
+var Transcript             = require('./transcript');
 
 module.exports = MediaSiloAPI;
 
@@ -19,4 +20,5 @@ function MediaSiloAPI(credentials) {
   this.Project = new Project(this.apiClient);
   this.Folder = new Folder(this.apiClient);
   this.Comment = new Comment(this.apiClient);
+  this.Transcript = new Transcript(this.apiClient);
 }
