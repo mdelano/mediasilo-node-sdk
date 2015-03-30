@@ -7,6 +7,7 @@ var MetaData              = require('./metadata');
 var Rating                = require('./rating');
 var Project               = require('./project');
 var Folder                = require('./folder');
+var Comment               = require('./comment');
 
 module.exports = MediaSiloAPI;
 
@@ -17,4 +18,5 @@ function MediaSiloAPI(credentials) {
   this.Rating = new Rating(this.apiClient);
   this.Project = new Project(this.apiClient);
   this.Folder = new Folder(this.apiClient);
+  this.Comment = new Comment(this.apiClient);
 }
