@@ -123,6 +123,13 @@ var getRootUrl = function() {
 
 var getErrorResponse = function(res) {
   var body = "";
+
+  if(res.statusCode) {
+    var error = "HTTP " + res.statusCode;
+  }
+  else {
+
+  }
   var error = "HTTP " + res.statusCode;
 
   if(res.statusCode == 400) {
