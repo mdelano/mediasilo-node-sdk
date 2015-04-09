@@ -47,10 +47,13 @@ client.prototype.post = function(resource_path, payload) {
 
   request.post(options, function (error, response, body) {
     if (!error && response.statusCode < 300) {
-      deferred.resolve(JSON.parse(body));
+      if(body && body.length > 0)
+        deferred.resolve(JSON.parse(body));
+      else
+      deferred.resolve();
     }
     else {
-      deferred.reject(get_error_response(response));
+      deferred.reject(getErrorResponse(response));
     }
   });
 
@@ -73,7 +76,7 @@ client.prototype.put = function(resource_path, payload) {
       }
     }
     else {
-      deferred.reject(get_error_response(response));
+      deferred.reject(getErrorResponse(response));
     }
   });
 
@@ -88,7 +91,7 @@ client.prototype.delete = function(resource_path) {
       deferred.resolve(body);
     }
     else {
-      deferred.reject(get_error_response(response));
+      deferred.reject(getErrorResponse(response));
     }
   });
 
